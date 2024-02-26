@@ -6,6 +6,8 @@ const MAX_RETRIES = 3;
 router.post('/', async (req, res) => {
   const { pin, msisdn } = req.body;
 
+  const correctPin = '1234'; // Replace with actual PIN
+
   // ... (Database integration: Fetch user, validate PIN, update retries)
 
   if (pin !== correctPin) {
